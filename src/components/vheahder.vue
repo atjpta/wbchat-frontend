@@ -1,32 +1,44 @@
 <template>
-  <div class="h-16 bg-gray-800/30 text-xl text-white">
+  <div class="h-16 bg-gray-100/30 text-xl">
       <div class="flex justify-between p-4">
             <!-- bên trái -->
             <div class="">
                 <h1> WBCHAT</h1>
             </div>
             <!-- giữa -->
-            <div class="flex"> 
-                <div class="pr-6 ">
-                    <i class="fas fa-search"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-                    Trang chủ
+            <div class="flex pl-28"> 
+                <div class="px-6 ">
+                   <router-link to="/">
+                        <button>
+                            <i class="fa-solid fa-house"></i>
+                            Trang chủ
+                        </button>
+                   </router-link>
                 </div>
-                <div class="pr-6">
-                    Giới thiệu
+                <div class="px-6">
+                    <router-link to="/">
+                        <button>
+                            <i class="fa-solid fa-circle-question"></i>
+                            Giúp đỡ
+                        </button>
+                   </router-link>
                 </div>
-                <div class="pr-6">
-                    Liên hệ
+                <div class="px-6">
+                    <router-link to="/">
+                        <button>
+                            <i class="fa-solid fa-phone"></i>
+                            Liên hệ
+                        </button>
+                   </router-link>
                 </div>
             </div>
             <!-- bên phải -->
             <div class="flex"> 
                 <div class="pr-3 border-r-2">
-                    Đăng nhập
+                    <router-link to="/login" class="bg-teal-500/50 rounded-lg p-2 shadow-md"><button>Đăng nhập</button></router-link>
                 </div>
                 <div class="pl-3">
-                    Đăng kí
+                    <router-link to="/login" class="bg-teal-500/50 rounded-lg p-2 shadow-md">Đăng kí</router-link>
                 </div>
             </div>
 
